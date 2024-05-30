@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.sedan, .suv, .luxury {
+    max-width: 250px;
+    padding: 10px;
+    font-weight: 400;
+    color:hsla(0, 0%, 100%, 0.75);
+    height: 400px;
+    padding: 0 35px;
+    padding-top: 45px;
+}
+
+.header {
+    display: block;
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.sedan button {
+    color:hsl(31, 77%, 52%);
+}
+
+.suv button {
+    color: hsl(184, 100%, 22%);
+
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedan button:hover {
+    background-color:hsl(31, 77%, 52%);
+    color:white;
+    border: 2px white solid;
+}
+.suv button:hover {
+    background-color:hsl(184, 100%, 22%);
+    color:white;
+    border: 2px white solid;
+}
+.luxury button:hover {
+    background-color:hsl(179, 100%, 13%);
+    color:white;
+    border: 2px white solid;
+}
+
+button { 
+    font-family: "Lexend Deca", sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 25px;
+    border: 0px;
+    border-radius: 25px;
+    position: absolute;
+    bottom:40px;
+    cursor: pointer;
+    border: 2px white solid;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+}
+
+button:hover{
+    background-color: red;
+}
